@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<title>アノテーションツール</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+	<link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+	<script defer src="https://share.tshuto.com/common-src/javascript/tamura/tamura0-css.js"></script>
+	<div id="page-frame" class="my-div">
+		<!--先生の注文のせいで使わなくなったタグたち-->
+		<!--
+			<div id="info-frame" class="my-div">
+				<select id="n_dir-id"></select>
+				<div id="images_select_box-id"></div>
+			</div>
+			-->
+		<div id="stop-show" class="my-div show-elem-ch0" style="display: none">
+			<div id="stop-show-div0" class="my-div show-elem-ch1">
+				<span id="stop-show-span0" class="my-div show-elem-ch2">&#x26A0;アノテーションできる&#x26A0;</span>
+				<span id="stop-show-span1" class="my-div show-elem-ch2"><br />&#x26A0;画像がありません&#x26A0;</span>
+				<span id="stop-show-span2" class="my-div show-elem-ch2"><br />管理者までご連絡ください</span>
+			</div>
+		</div>
+		<div id="image-frame" class="my-div" style="display: none">
+			<div id="image-frame-box" class="my-div image-frame-box">
+				<div id="image-frame-canvas" class="my-div image-frame-canvas"></div>
+			</div>
+			<div id="buttons-box" class="my-div buttons-box">
+				<div id="ok-button" class="my-div buttons-button">完了</div>
+				<div id="delete-button" class="my-div buttons-button">直前消し:(ミドルボタン)</div>
+				<div id="stop-button" class="my-div buttons-button">中断</div>
+				<div id="send-button" class="my-div buttons-button">送信:(右クリック)</div>
+			</div>
+		</div>
+		<canvas id="NO-CANVAS" style="display: none;"></canvas>
+		<div id="loading-show" class="my-div show-elem-ch0" style="display: block">
+			<div id="loading-show-div0" class="my-div show-elem-ch1">
+				<span id="loading-show-span0" class="my-div show-elem-ch2">しばらくお待ちください。</span>
+				<span id="loading-show-span1" class="my-div show-elem-ch2"><br />読み込み中です。</span>
+				<span id="loading-show-span2" class="my-div show-elem-ch2"><br />&#9787;&#9787;&#9787;</span>
+			</div>
+		</div>
+	</div>
+	<div id="error-show" class="my-div show-elem-ch0">
+		<div id="error-show-div0" class="my-div show-elem-ch1">
+			<span id="error-show-span0" class="my-div show-elem-ch2">現在お使いのデバイスは横幅より縦幅の方が長い、</span>
+			<span id="error-show-span1" class="my-div show-elem-ch2"><br />または同じ長さの可能性があります。</span>
+			<span id="error-show-span2" class="my-div show-elem-ch2"><br />画面を横に向けて横幅を長くするか、</span>
+			<span id="error-show-span3" class="my-div show-elem-ch2"><br />別のデバイスでお楽しみください。</span>
+		</div>
+	</div>
+
+	<script defer src="./src/javascript/function/math.js"></script>
+	<script defer src="./src/javascript/function/other.js"></script>
+
+	<script defer src="./src/javascript/class/class.js"></script>
+	<script defer src="./src/javascript/script/script.js"></script>
+</body>
+
+</html>

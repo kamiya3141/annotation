@@ -1,0 +1,13 @@
+{
+	"root_dir_name": "data0",
+	"dir_base_name": "img-group",
+	"image_dir_name": "image",
+	"text_dir_name": "text",
+	"json_dir_name": "json",
+	"dirs": [
+		{
+			"name": "asagao",
+			"n_of": "653"
+		}
+	]
+}
